@@ -38,7 +38,7 @@ Exemplos: `subir.cmd --resetar` (Windows, pelo terminal) ou `./subir.sh --reseta
 
 As portas e as versões ficam em **`versoes.env`**. O backend e o frontend são fixados por commit (`BACKEND_REF` e `FRONTEND_REF`), para que todos subam exatamente o mesmo código da apresentação. Para usar outra versão, troque o commit e rode `subir` de novo.
 
-Os dados do banco estão em `docker/db/dentalflow.sql`: estrutura, a view do painel e os dados da demonstração (consultas da semana de 26/10/2026, mapas do dia de outubro, estoque). O MySQL carrega esse arquivo só quando o volume está vazio: na primeira subida ou depois de `--resetar`.
+Os dados do banco estão em `docker/db/dentalflow.sql`: estrutura, a view do painel e os dados da demonstração (49 pacientes, consultas de agosto a novembro de 2026, mapas do dia de agosto a outubro para os três dentistas, 24 materiais e 8 equipamentos). O MySQL carrega esse arquivo só quando o volume está vazio: na primeira subida ou depois de `--resetar`.
 
 ## Atualizar os dados da imagem
 
